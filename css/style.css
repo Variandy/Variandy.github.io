@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&display=swap');
+
+
+*{
+	box-sizing: border-box;
+	margin:0;
+
+}
+/*Header Start*/
+
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+header{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	border-bottom: 1px solid black;
+}
+
+.container{
+	padding: 0;
+	margin: 0;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .left-side a{
+	font-size: 25px;
+	text-decoration: none;
+	line-height: 72px;
+	color: #ffff;
+	font-weight: 600;
+	margin-left: 45px;
+	position: relative; 
+}
+
+.right-side ul li:hover{
+	border-bottom: 3px solid #ffff;
+}
+
+.right-side ul li a:hover{
+	color: #ffff;
+}
+
+
+header .right-side ul{
+	list-style: none;
+	padding-right: 35px;
+	margin: 0;
+}
+
+header .right-side ul li{
+	display: inline-block;
+	margin-left: 35px;
+	border-bottom: 3px solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+header .right-side ul li a{
+	font-size: 15px;
+	text-decoration: none;
+	line-height: 72px;
+	color: #8a8a8a;
+	font-weight: 600;
+	position: relative;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+/*Header End*/
+
+/*rumah start*/
+
+.rumah{
+	min-height: 100vh;
+	background-image: url("../images/muka.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.rumah .container{
+	padding: 170px 100px;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.rumah .home-content .home-text{
+	padding-left: 25px;
+	border-left: 5px solid #ffffff;
+}
+
+.home-text{
+	display: block;
+	margin-bottom: 25px;
+	padding-bottom: 0px;
+	max-width: 75%
+	flex: 0 0 75%;
+	position: relative;
+	color: transparent;
+	animation: text_reveal 1s ease forwards;
+	animation-delay: 1.5s;
+}
+
+.rumah .home-text h1 span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: #ED5565;
+	animation: text_reveal_box 1s ease;
+	animation-delay: 1s;
+
+}
+
+.home-text h4{
+	margin-bottom: 10px;
+	position: relative;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.home-text h1{
+	margin-bottom: 15px;
+	font-size: 60px;
+	font-weight: 700;
+	animation: text_reveal1 1s ease forwards;
+	animation-delay: 1.5s;
+}
+
+.home-text h3{
+	margin-bottom: 25px;
+	font-size: 25px;
+}
+
+.home-text h5{
+	margin-bottom: 25px;
+	font-size: 15px;
+}
+
+.rumah .home-content .home-button a{
+	border-radius: 10px;
+	color: #ffff;
+	border: 1px solid #ED5565;
+	padding: 12px 15px;
+}
+
+.rumah .home-content .home-button a:hover{
+	background-color: #ED5565;
+	color: black;
+	transition: color 0.5s;
+}
+
+/*rumah end*/
+
+/*work-experience start*/
+
+.work-experience{
+	min-height: 110vh;
+	color: black;
+}
+.work-experience .container{
+	letter-spacing: 0.15rem;
+	list-style: none;
+}
+.background-text{
+	font-family: 'MuseoModerno', cursive;
+	font-size: 50px;
+	color: #ED5565;
+	margin-left: 50px;
+}
+
+.background-text span{
+	color: #8a8a8a;
+}
+
+.work{
+	display: grid;
+	width: 500px;
+	height:30%;
+	grid-template-columns: 550px 650px;
+	grid-template-rows: 200px 265px;
+	align-content: center;
+	text-align: center;
+	list-style: none;
+}
+
+.work1-mid{
+	margin: 0 100px;
+	padding-top: 50px;
+	background-image: url("../images/work/perusahaan.jpg");
+	width: 80%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+	border-radius: 30px;
+	overflow: hidden;
+}
+
+.work1-mid::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(200,200,200,0.5);
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	z-index: -1;
+}
+
+.work1-right{
+	margin: 0 100px;
+	padding-top: 50px;
+	padding-right: 30px;
+	background-image: url("../images/work/1.jpg");
+	width: 90%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+	color: white;
+	border-radius: 30px;
+	overflow: hidden;
+}
+.work1-right::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: .7;
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	z-index: -1;
+}
+
+.work1-right li{
+	display: inline;
+	list-style: none;
+}
+
+.work2-mid{
+	margin: 20px 100px;
+	padding-top: 80px;
+	background-image: url("../images/work/perusahaan.jpg");
+	width: 80%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+	border-radius: 30px;
+	overflow: hidden;
+}
+
+.work2-mid::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(200,200,200,0.5);
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	z-index: -1;
+}
+
+.work2-right li{
+	display: inline;
+	list-style: none;
+}
+.work2-right{
+	margin: 20px 100px;
+	padding-top: 20px;
+	padding-right: 30px;
+	background-image: url("../images/work/1.jpg");
+	width: 90%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+	color: white;
+	border-radius: 30px;
+	overflow: hidden;
+}
+.work2-right::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: .7;
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	z-index: -1;
+}
+
+/* Work experience end*/
+
+/* Education Start */
+
+.education{
+	min-height: 105vh;
+	background-image: url("../images/background-1.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.education .container{
+	font-family: 'MuseoModerno', cursive;
+	font-size: 50px;
+	color: #ffffff;
+	padding-bottom: 30px;
+	margin-left: 700px; 
+}
+
+.education .container span{
+	color: #ED5565;
+}
+
+.education .row{
+	display: grid;
+	grid-template-columns: 450px 750px;
+	grid-template-rows: 350px;
+	align-content: center;
+	text-align: right;
+	list-style: none;
+
+}
+
+.education .row .my-education-left{
+	width: 200px;
+	height: 200px;
+	padding: 50px;
+	border: 1px solid white;
+	border-radius: 10px;
+	margin-left: 300px;
+	background-color: #8a8a8a;
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	
+}
+
+.education .row .my-education-right{
+	border: 1px solid white;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	width: 500px;
+	height: 300px;
+	text-align: left;
+	padding: 25px;
+	font-size: 22px;
+	letter-spacing: 0.1rem;
+	line-height: 2.5rem;
+	color: white;
+}
+
+
+/* Education End */
+
+/* Skills Start */
+.skills{
+	min-height: 105vh;
+	background-image: url("../images/background-2.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.skills .container{
+	font-family: 'MuseoModerno', cursive;
+	font-size: 50px;
+	color: #8a8a8a;
+	padding-bottom: 30px;
+	margin-left: 50px; 
+}
+
+.skills .container span{
+	color: #ED5565;
+}
+
+
+
+
+/* Skills End */
+
+
+
+
+/*Porotolio Start */
+.portofolio{
+	min-height: 105vh;
+	background-image: url("../images/background-3.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #ffff;
+	margin: 0;
+}
+
+.portofolio .container{
+	font-family: 'MuseoModerno', cursive;
+	font-size: 50px;
+	color: #ffff;
+	padding-bottom: 30px;
+	margin-left: 650px; 
+}
+
+.portofolio .container span{
+	color: #ED5565;
+}
+
+.portofolio .row{
+	display: grid;
+	grid-template-columns: 500px 500px;
+	grid-template-rows: 350px; 
+	justify-content: center;
+	text-align: center;
+}
+
+
+
+
+/*Porotolio End */
+
+/*Footer*/
+footer{
+	text-align: center;
+    justify-content: center;
+    background-image: url("../images/background-4.jpg");
+    background-size: cover;
+	background-position: center;
+    color: white;
+    font-size: 20px;
+    padding: 150px 0;
+}
+
+/* Footer */
+
+
+/*keyframes start*/
+@keyframes text_reveal_box{
+	50%{
+		width: 100%;
+		left: 0;
+	}
+	100%{
+		width: 0;
+		left: 100%;
+	}
+}
+
+@keyframes text_reveal{
+	100%{
+		color: white;
+	}
+}
+
+@keyframes text_reveal1{
+	100%{
+		color: #ED5565;
+	}
+}
+/*keyframes end*/
